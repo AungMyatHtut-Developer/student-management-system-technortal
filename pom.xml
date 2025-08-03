@@ -4,6 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <!-- Project Object Model -->
     <groupId>com.technortal</groupId>
     <artifactId>student-management-system-technortal</artifactId>
     <version>1.0-SNAPSHOT</version>
@@ -25,6 +26,34 @@
             <artifactId>javafx-fxml</artifactId>
             <version>21</version>
         </dependency>
+
+        <!-- Spring JDBC -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>6.1.4</version> <!-- or latest -->
+        </dependency>
+
+        <!-- HikariCP (connection pool) -->
+        <dependency>
+            <groupId>com.zaxxer</groupId>
+            <artifactId>HikariCP</artifactId>
+            <version>5.1.0</version>
+        </dependency>
+
+        <!--JDBC driver for MySQL -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.33</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.36</version>
+        </dependency>
+
 
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -61,7 +90,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                com.technortal.studentmanagementsystemtechnortal/com.technortal.studentmanagementsystemtechnortal.HelloApplication
+                                com.technortal.studentmanagementsystemtechnortal/com.technortal.studentmanagementsystemtechnortal.StudentManagementSystem
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
